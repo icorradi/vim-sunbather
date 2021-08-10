@@ -63,7 +63,7 @@ else
   let s:bg              = s:actual_white
   let s:bg_subtle       = s:light_gray
   let s:bg_very_subtle  = s:lightest_gray
-  let s:norm            = s:light_black
+  let s:norm            = s:lighter_gray
   let s:norm_subtle     = s:medium_gray
   let s:pink            = s:dark_pink
   let s:cyan            = s:dark_cyan
@@ -121,7 +121,7 @@ hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
 
-call s:h("Type",          {"fg": s:norm})
+call s:h("Type",          {"fg": s:norm_subtle})
 hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
